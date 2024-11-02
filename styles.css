@@ -1,0 +1,158 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e9f5ff;
+    color: #444;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #6c9bd1;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+input[type="text"],
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    width: 240px;
+}
+
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: #4a86e8;
+}
+
+/* Country List Styling */
+#country-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-country {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-width: 200px;
+    width: calc(33.33% - 20px); /* Three cards in a row */
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-country:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-country img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Cover to maintain aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card-country h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.card-country p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Button Styling */
+button {
+    background-color: #5c7f95;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #3e5b72;
+}
+
+/* Load More Button */
+#load-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+}
+
+/* Country Details Styling */
+#country-details-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#country-details h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#country-details p {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+/* Back Button Styling */
+#back-button {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#back-button:hover {
+    background-color: #bbb;
+}

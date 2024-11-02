@@ -2,37 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Explorer</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
     <header>
-        <h1 class="main-title">World Explorer</h1>
-        <div class="input-container">
-            <input type="text" id="country-search" placeholder="Search a country..." aria-label="Search for a country">
-            <label for="region-select" class="visually-hidden">Select Region</label>
-            <select id="region-select" aria-label="Select a region">
-                <option value="all">All Regions</option>
-                <option value="Africa">Africa</option>
-                <option value="Americas">Americas</option>
-                <option value="Asia">Asia</option>
-                <option value="Europe">Europe</option>
-                <option value="Oceania">Oceania</option>
-            </select>
-        </div>
+        <h1>Country Explorer</h1>
+        <input type="text" id="search" placeholder="Search for a country..." />
+        <select id="region-filter">
+            <option value="all">Filter by Country</option>
+            <option value="Africa">Africa</option>
+            <option value="Americas">Americas</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+        </select>
     </header>
 
-    <main id="explorer-list" role="list" aria-label="List of countries"></main>
-    
-    <footer>
-        <button id="more-button" aria-label="Load more countries">Load More</button>
-    </footer>
+    <main id="country-list"></main>
+    <button id="load-more">Show More</button>
 
-    <script src="./explorer.js" defer></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
-
