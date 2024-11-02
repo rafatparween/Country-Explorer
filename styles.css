@@ -9,10 +9,9 @@ body {
     font-family: "Arial", sans-serif;
     margin: 0;
     padding: 20px;
-    background: linear-gradient(to right, #191970, #0099CC, #003366); /* Gradient background */
+    background: linear-gradient(to right, #191970, #0092cc, #003366); /* Gradient background */
     color: #444;
 }
-
 
 /* Header Styling */
 header {
@@ -22,7 +21,7 @@ header {
     gap: 15px;
     margin-bottom: 30px;
     padding: 15px;
-    background-color: #6c9bd1;
+    background-color: #0092cc;
     color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -33,6 +32,7 @@ h1 {
     font-weight: 600;
 }
 
+/* Input and Select Styling */
 input[type="text"],
 select {
     padding: 10px;
@@ -120,10 +120,10 @@ button:hover {
 
 /* Country Details Styling */
 #country-details-container {
-    max-width: 800px;
+    max-width: 600px; /* Decreased width for better readability */
     margin: 50px auto;
     padding: 30px;
-    background-color: #2b2b2b;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
     border-radius: 10px;
     color: #fff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -148,12 +148,25 @@ button:hover {
     color: #333;
     border: none;
     padding: 8px 15px;
+
+
+
+
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 #back-button:hover {
     background-color: #bbb;
+    transform: scale(1.05); /* Slight zoom effect */
 }
+
+#search{
+    margin-left: 227px;
+    width: 1115px;
+}
+
+
+
