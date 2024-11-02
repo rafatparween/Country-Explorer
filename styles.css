@@ -9,9 +9,10 @@ body {
     font-family: "Arial", sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #e9f5ff;
+    background: linear-gradient(to right, #191970, #0099CC, #003366); /* Gradient background */
     color: #444;
 }
+
 
 /* Header Styling */
 header {
